@@ -91,6 +91,7 @@ p{
 
 .masthead a {
 	background:url(../img/logo.png) no-repeat top left;
+	margin-top:10px;
 	display:block;
 	height:80px;
 	width:550px;

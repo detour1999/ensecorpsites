@@ -134,7 +134,7 @@ nav{
 }
 
 /* The clearfix hack to clear the floats: */
-
+nav:after,
 .clear:after{
 	content: ".";
 	display: block;
@@ -202,6 +202,7 @@ article{
 	text-shadow:0 2px 0 #303300;
 }
 aside {
+	display:block;
 	border:3px solid #303300;
 	background-color:#FF6600;
 	/* Recent browsers */

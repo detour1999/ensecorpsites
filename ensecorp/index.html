@@ -4,67 +4,93 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>ensecorp - Enthusiast Services</title>
+  <link rel="stylesheet" type="text/css" href="css/def.css" />
   
   
 </head>
 <body>
 
 
-
+<section id="page">
 <header role="banner">
   <div class="masthead">
     <a href="/">Ensecorp</a>
   </div>
+  <nav>
+	<ul>
+		<li><a href="#who-is-ensecorp">who?</a></li>
+		<li><a href="#what-is-ensecorp">what?</a></li>
+		<li><a href="#where-is-ensecorp">where?</a></li>
+		<li><a href="#when-is-ensecorp">when?</a></li>
+		<li><a href="#why-is-ensecorp">why?</a></li>
+		<li><a href="#how-is-ensecorp">how?</a></li>
+	</ul>
+  </nav>
+  <div class="line"></div>
 </header>
 
+<aside id="working-on">
+  <section>
+    <header>
+      <h2>What are we working on right now?</h2>
+    </header>
+	<div class="line"></div>
+    We're hard at work on our first offering. We're keeping it under wraps for now but we should be able to take the wraps off soon.
+  </section>
+</aside>
 
 <section id="main-content" role="main">
-  <h1>This is ensecorp!</h1>
-  <article>
+  <article id="who-is-ensecorp">
     <header>
       <h2>Who is ensecorp?</h2>
     </header>
+	<div class="line"></div>
     We are a couple of nerdy auto enthusiasts who hope to bring better services to our kind.
   </article>
-  <article>
+  <article id="what-is-ensecorp">
     <header>
       <h2>What is ensecorp?</h2>
     </header>
+	<div class="line"></div>
     We are devoted to bringing enthusiasts compelling services.
   </article>
-  <article>
+  <article id="where-is-ensecorp">
     <header>
       <h2>Where is ensecorp?</h2>
     </header>
+	<div class="line"></div>
     We are physcially in Chicago, IL; but we try to make it out to a bunch of enthusiast events around the world, and we live on the internet.
   </article>
-  <article>
+  <article id="when-is-ensecorp">
     <header>
       <h2>When is ensecorp?</h2>
     </header>
+	<div class="line"></div>
     We're working as fast as we can, and we hope to have fun things to show in the next couple of weeks.
   </article>
-  <article>
+  <article id="why-is-ensecorp">
+    <header>
+      <h2>Why is ensecorp?</h2>
+    </header>
+	<div class="line"></div>
+    We needed some technology to help us be better car nerds, and we could find anything that really worked for us, so we made some.
+  </article>
+  <article id="how-is-ensecorp">
     <header>
       <h2>How is ensecorp?</h2>
     </header>
+	<div class="line"></div>
     We're mostly pretty excited about the things we are planning on bringing to enthusiasts in the next couple months.
   </article>
 </section>
 
 
-<aside id="sidebar">
-  <h1>Right now.</h1>
-  <section>
-    <header>
-      <h2>What are we working on?</h2>
-    </header>
-    We're hard at work on our first offering. We're keeping it under wraps for now but we should be able to take the wraps off soon.
-  </section>
+<aside id="twitter">
   <section>
     <header>
       <h2>What are we talking about?</h2>
     </header>
+	<div class="line"></div>
 	<p id="twitter_update_list"></p> 
 	<a href="http://twitter.com/ensecorp" rel="external">@ensecorp</a> via twitter
   </section>
@@ -72,7 +98,8 @@
 
 
 <footer>
-&copy; 2011</footer>
+&copy; 2011 ensecorp.</footer>
+</section>
 
 
 </body>
@@ -81,6 +108,7 @@
 	// Load jQuery
 	google.load("jquery", "1");
 </script> 
+
 <script type="text/javascript" src="/js/twitter.js"></script> 
 <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/ensecorp.json?callback=twitterCallback2&amp;count=1"></script>
 </html>

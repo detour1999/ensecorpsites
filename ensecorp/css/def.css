@@ -1,0 +1,277 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#fcfcfc;
+	background-color:#929EA6;
+	/* Recent browsers */
+	background: -moz-linear-gradient(
+		top,
+		#929EA6,
+		#999
+	);
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(#929EA6),
+		to(#999)
+	);
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+	font-size:1.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:lowercase;
+	color:#303300;
+	text-shadow:0 2px 2px #F94;
+}
+article h2 { 
+	color:#999;
+	text-shadow:0 2px 2px #303300;
+	
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+.masthead a {
+	background:url(../img/logo.png) no-repeat top left;
+	display:block;
+	height:80px;
+	width:550px;
+	text-indent:-9999px;
+}
+.line{
+	height:3px;
+	background-color:#FF6600;
+	border-bottom:1px solid #F94;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+aside .line{
+	height:1px;
+	background-color:#920;
+	border-bottom:1px solid #F94;
+	margin:0.5em 0;
+}
+article .line{
+	height:1px;
+	background-color:#303300;
+	border-bottom:1px solid #515659;
+	margin:0.5em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:#F8f8f8;
+	padding:0 5px;
+	float:right;
+	right:0;
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 3px 3px #333333;
+	-webkit-box-shadow:0 3px 3px #333333;
+	box-shadow:0 3px 3px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#333333;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px #999999;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#F94;
+}
+
+nav, article, nav ul li a,figure, aside{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#515659;
+	/* Recent browsers */
+	background: -moz-linear-gradient(
+		top,
+		#515659,
+		#333
+	);
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(#515659),
+		to(#333)
+	);
+	margin:1.5em 0;
+	padding:20px;
+	font-size:2em;
+	text-shadow:0 2px 0 #303300;
+}
+aside {
+	border:3px solid #303300;
+	background-color:#FF6600;
+	/* Recent browsers */
+	background: -moz-linear-gradient(
+		top,
+		#F94,
+		#FF6600
+	);
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(#F94),
+		to(#FF6600)
+	);
+	margin:1.5em 0;
+	padding:20px;
+	font-size:2em;
+	text-shadow:0 2px 1px #920;
+}
+figure{
+	float:right;
+	height:300px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+figure img{
+	margin-left:-60px;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
